@@ -1,0 +1,28 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "types": [
+      "@nuxtjs/axios",
+      "@nuxtjs/auth-next"
+    ],
+    "resolveJsonModule": true,
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
